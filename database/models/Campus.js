@@ -20,6 +20,11 @@ const Campus = db.define("campus", {
 
   description: {
     type: Sequelize.STRING,
+  },
+  
+  imageUrl: {
+    type: Sequelize.TEXT,
+    defaultValue: "https://eatliver.b-cdn.net/wp-content/uploads/2020/06/long-snout-dog6.jpg"
   }
 });
 
