@@ -15,6 +15,17 @@ const Student = db.define("student", {
   lastname: {
     type: Sequelize.STRING,
     allowNull: false
+  },
+  email: {
+    type: Sequelize.STRING,
+    allowNull: false
+  },
+  imageUrl: {
+    type: Sequelize.TEXT,
+    defaultValue: "https://i.kym-cdn.com/photos/images/newsfeed/002/224/606/005.png"
+  },
+  gpa: {
+    type: Sequelize.DECIMAL(3,2)
   }
 });
 
